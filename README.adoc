@@ -1,0 +1,3 @@
+= laravel-demo
+
+Throwaway-project that I'm using to learn the Laravel framework. At the moment, it models a simple REST API server.

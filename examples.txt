@@ -1,0 +1,12 @@
+curl -i -X POST -H 'Content-type:application/json' -d '{"email":"schroeder.weldon@example.com","password":"password"}' http://127.0.0.1:8000/api/login
+
+curl -i -X POST http://127.0.0.1:8000/api/logout
+
+curl -i 'http://127.0.0.1:8000/api/posts?page=2&limit=2'
+
+curl -i 'http://127.0.0.1:8000/api/posts/1'
+
+curl -i -X POST -H 'Authorization: Bearer 6|bJlHF1kj6P3Y7fbX9EaaHPz6Y3U7OvehSSe3kxll' -H 'Content-type:application/json' -d '{"title":"New Post","body":"Nel mezzo del cammin di nostra vita..."}' http://127.0.0.1:8000/api/posts
+
+curl -i -X PUT -H 'Authorization: Bearer 6|bJlHF1kj6P3Y7fbX9EaaHPz6Y3U7OvehSSe3kxll' -H 'Content-type:application/json' -d '{"title":"New Post","body":"Nel mezzo del cammin di nostra vita..."}' http://127.0.0.1:8000/api/posts/1
+
